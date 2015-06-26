@@ -119,4 +119,10 @@ cd build
 rake view_static
 ```
 
-You can now view your static files locally by visiting [`localhost:8888`](http://localhost:8888)
+You can now view your static files locally by visiting [`localhost:8888`](http://localhost:8888).
+
+The static assets located in the build directory are what you want to host.
+
+**Note: You may want to create a directory on your web server, clone your forked repo, and change the build directory within the config file so that you can manage and deploy changes directly on the server.**
+
+We are also currently evaluating the possibility of managing and hosting policies for our customers. If that interests you please send us an email at [hello@catalyze.io](mailto:hello@catalyze.io) with the subject line "Policy Documentation".
