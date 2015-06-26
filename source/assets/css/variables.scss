@@ -1,0 +1,164 @@
+$c_brand: #2098ca;
+$c_text: #777;
+$c_text-dark: #333;
+$nav-bg: #393939;
+$examples-bg: #393939;
+$code-bg: #292929;
+$code-annotation-bg: #1c1c1c;
+$nav-subitem-bg: #262626;
+$nav-active-bg: #2467af;
+$lang-select-border: #000;
+$lang-select-bg: #222;
+$lang-select-active-bg: $examples-bg;
+$lang-select-pressed-bg: #111;
+$main-bg: #eaf2f6;
+$aside-notice-bg: #8fbcd4;
+$aside-warning-bg: #c97a7e;
+$aside-success-bg: #6ac174;
+$search-notice-bg: #c97a7e;
+
+$main-text: #333;
+$nav-text: #fff;
+$nav-active-text: #fff;
+$lang-select-text: #fff;
+$lang-select-active-text: #fff;
+$lang-select-pressed-text: #fff;
+
+$nav-width: 230px;
+$examples-width: 50%;
+$logo-margin: 20px;
+$main-padding: 28px;
+$nav-padding: 15px;
+$nav-v-padding: 10px;
+$nav-indent: 10px;
+$code-annotation-padding: 13px;
+$h1-margin-bottom: 21px;
+$tablet-width: 930px;
+$phone-width: $tablet-width - $nav-width;
+
+%code-font{
+	font-family: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif;
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+$nav-active-shadow: #000;
+$nav-footer-border-color: #666;
+$nav-embossed-border-top: #000;
+$nav-embossed-border-bottom: #939393;
+$main-embossed-text-shadow: 0px 1px 0px #fff;
+$search-box-border-color: #666;
+
+%break-words{
+	-ms-word-break: break-all;
+	word-break: break-all;
+	word-break: break-word;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+}
+
+$f_sans: Avenir, 'Helvetica Neue', Helvetica, arial, sans-serif;
+
+@mixin border-radius($radius){
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	-o-border-radius: $radius;
+	border-radius: $radius;
+}
+@mixin box-shadow($shadow1, $shadow2:false, $shadow3:false){
+	$shadow: $shadow1;
+	@if $shadow2 != false
+		{ $shadow: $shadow1, $shadow2; }
+		@if $shadow3 != false
+			{ $shadow: $shadow1, $shadow2, $shadow3; }
+
+	-moz-box-shadow: $shadow;
+	-webkit-box-shadow: $shadow;
+	box-shadow: $shadow;
+}
+@mixin easing($speed){
+	-moz-transition: all $speed ease;
+	-webkit-transition: all $speed ease;
+	-o-transition: all $speed ease;
+	transition: all $speed ease;
+}
+@mixin border-radius-top($radius){
+	-webkit-border-top-left-radius: $radius;
+	-webkit-border-top-right-radius: $radius;
+	-moz-border-radius-topleft: $radius;
+	-moz-border-radius-topright: $radius;
+	border-top-left-radius: $radius;
+	border-top-right-radius: $radius;
+}
+button.button,
+a.button{
+	display: block;
+	padding: 7px;
+	@include border-radius(5px);
+	background-image: linear-gradient(-180deg, #7DD1F3 0%, #2895C3 100%);
+	border: 1px solid #389BC4;
+	font-family: $f_sans;
+	font-weight: 500;
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+	outline: none;
+	&:hover{
+		background-image: linear-gradient(-180deg, darken(#7DD1F3, 5%) 0%, darken(#2895C3, 5%) 100%);
+		cursor: pointer;
+	}
+	&:active{
+		background-image: linear-gradient(-180deg, darken(#7DD1F3, 5%) 0%, darken(#2895C3, 5%) 100%);
+		-moz-box-shadow: inset 0 0 10px #777;
+		-webkit-box-shadow: inset 0 0 10px #777;
+		box-shadow: inset 0 0 10px #777;
+	}
+}
+button.button.neutral-button,
+button.button.neutral-button-alt,
+a.button.neutral-button-alt,
+a.button.neutral-button{
+	background-image: linear-gradient(-180deg, #FDFDFD 0%, #D1D1D1 100%);
+	border: 1px solid #3F809B;
+	color: $c_text;
+	max-width: none;
+	width: auto;
+	&:hover{
+		background-image: linear-gradient(-180deg, darken(#FDFDFD, 5%) 0%, darken(#D1D1D1, 5%) 100%);
+	}
+}
+button.button-success,
+a.button-success{
+	background-image: linear-gradient(-180deg, #B9E798 0%, #83C851 100%);
+	border: 1px solid #75AC50;
+	&:hover{
+		background-image: linear-gradient(-180deg, darken(#B9E798, 5%) 0%, darken(#83C851, 5%) 100%);
+	}
+}
+button.button.button-danger,
+a.button.button-danger{
+	background-image: linear-gradient(-180deg, #FC7777 0%, #B22C2C 100%);
+	border: 1px solid #AC2D2D;
+	&:hover{
+		background-image: linear-gradient(-180deg, darken(#FC7777, 5%) 0%, darken(#B22C2C, 5%) 100%);
+	}
+}
+button.button.disabled{
+	@extend a.button.neutral-button;
+	border: 1px solid #bbb;
+	text-shadow: 0px 0px 0px transparent;
+}
+.cf:before,
+.cf:after{
+	content: " ";
+	display: table;
+}
+.cf:after{
+	clear: both;
+}
+.cf{
+	*zoom: 1;
+}

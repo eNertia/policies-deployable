@@ -1,0 +1,16 @@
+@import 'variables';
+
+<%= Rouge::Themes::ThankfulEyes.render(:scope => '.highlight') %>
+
+.highlight .c, .highlight .cm, .highlight .c1, .highlight .cs {
+  color: #909090;
+}
+
+.highlight, .highlight .w {
+  background-color: $code-bg;
+}
+
+pre.highlight{
+	padding: 10px;
+	margin: 0px 20px 20px 20px;
+}
