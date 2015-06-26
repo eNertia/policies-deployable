@@ -22,41 +22,45 @@ helpers do
 
   # FILL IN YOUR COMPANY INFORMATION HERE
   def company_name
-    "Catalyze"
+    "Acme Inc"
   end
 
   def company_name_phone
-    "888-377-3184"
+    "888-888-8888"
   end
 
   def company_name_email
-    "888-377-3184"
+    "contact@company.com"
+  end
+
+  def company_url
+    "company.com"
   end
 
   # FILL IN YOUR SECURITY OFFICER INFORMATION HERE
   def security_officer
-    "Ben Uphoff, CTO"
+    "John Smith, CTO"
   end
 
   def security_officer_phone
-    "414-335-0253"
+    "111-111-1111"
   end
 
   def security_officer_email
-    "ben@catalyze.io"
+    "john.s@company.com"
   end
 
   # FILL IN YOUR PRIVACY OFFICER INFORMATION HERE
   def privacy_officer
-    "Travis Good, CEO"
+    "Jane Doe, CEO"
   end
 
   def privacy_officer_phone
-    "303-351-2640"
+    "111-111-1111"
   end
 
   def privacy_officer_email
-    "travis@catalyze.io"
+    "jane.d@company.com"
   end
 
  end

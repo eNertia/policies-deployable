@@ -3,7 +3,7 @@
 @import "compass";
 @import "variables";
 @import "syntax";
-@import "ctz";
+@import "docs";
 html, body{
 	color: $main-text;
 	padding: 0;
@@ -173,7 +173,7 @@ html, body{
 		display: block;
 		$side-pad: $main-padding / 2 - 8px;
 		padding: 10px;
-		background-color: darken(#2098ca, 25%);
+		background-color: darken($c_brand, 25%);
 		@include transform-origin(0, 0);
 		@include transform(rotate(-90deg) translate(-100%, 0));
 		border-radius: 0 0 0 5px;
