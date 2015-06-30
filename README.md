@@ -10,7 +10,7 @@ We encourage contributions and adaption to this project. For guidelines on how t
 
 # Getting Started
 
-[**Check out our in-depth getting started� tutorial!**](https://github.com/catalyzeio/policies-deployable/wiki/Getting-Started-Tutorial)
+[**Check out our in-depth getting started tutorial!**](https://github.com/catalyzeio/policies-deployable/wiki/Getting-Started-Tutorial)
 
 **This section assumes you have a machine running OSX. If you're running windows you can download [RubyInstaller](http://rubyinstaller.org/) to get your local Ruby environment setup.**
 
