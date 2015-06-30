@@ -8,6 +8,8 @@ We encourage contributions and adaption to this project. For guidelines on how t
 
 # Getting Started
 
+[**✋ Check out the in-depth getting started tutorial!**](https://github.com/catalyzeio/policies-deployable/wiki/Getting-Started-Tutorial)
+
 **This section assumes you have a machine running OSX. If you're running windows you can download [RubyInstaller](http://rubyinstaller.org/) to get your local Ruby environment setup.**
 
 Once you have Ruby and RubyGems setup on your local machine you can run the following commands in terminal to get started:
@@ -126,3 +128,13 @@ The static assets located in the build directory are what you want to host.
 **Note: You may want to create a directory on your web server, clone your forked repo, and change the build directory within the config file so that you can manage and deploy changes directly on the server.**
 
 We are also currently evaluating the possibility of managing and hosting policies for our customers. If that interests you please send us an email at [hello@catalyze.io](mailto:hello@catalyze.io) with the subject line "Policy Documentation".
+
+### Policies in the wild
+
+Some of our favorite forks:
+
+- https://github.com/MolecularMatch/policies
+- https://github.com/FilamentLabs/PolicyExplorer
+- - https://github.com/Xodarap/policies
+- https://github.com/doxyme/policies
+- https://github.com/SelfCareCatalysts/policies
