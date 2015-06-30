@@ -133,6 +133,8 @@ We are also currently evaluating the possibility of managing and hosting policie
 
 ### Policies in the wild
 
+[Read about Eligible's success with Catalyze's open source policies!](https://catalyze.io/announcements/catalyze-releases-open-source-policies-and-procedures-to-hasten-healthcare-it-development)
+
 Some of our favorite forks:
 
 - https://github.com/MolecularMatch/policies
