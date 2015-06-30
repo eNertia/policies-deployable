@@ -1,5 +1,7 @@
 # Catalyze Policies (Deployable)
 
+![Repo Cover](http://i.imgur.com/D8sq8ex.png)
+
 **Only interested in the Policy content? You can find the markdown pages located in our [policies](https://github.com/catalyzeio/policies) repo.**
 
 Within the interest of our loyal customers we've decided to build a deployable version of our widely popular open source compliance policies. This body of work will provide you with the ability to quickly edit, build, and publish your very own version of our policies.
@@ -8,7 +10,7 @@ We encourage contributions and adaption to this project. For guidelines on how t
 
 # Getting Started
 
-[**✋ Check out the in-depth getting started tutorial!**](https://github.com/catalyzeio/policies-deployable/wiki/Getting-Started-Tutorial)
+[**Check out our in-depth getting started� tutorial!**](https://github.com/catalyzeio/policies-deployable/wiki/Getting-Started-Tutorial)
 
 **This section assumes you have a machine running OSX. If you're running windows you can download [RubyInstaller](http://rubyinstaller.org/) to get your local Ruby environment setup.**
 
@@ -135,6 +137,6 @@ Some of our favorite forks:
 
 - https://github.com/MolecularMatch/policies
 - https://github.com/FilamentLabs/PolicyExplorer
-- - https://github.com/Xodarap/policies
+- https://github.com/Xodarap/policies
 - https://github.com/doxyme/policies
 - https://github.com/SelfCareCatalysts/policies
