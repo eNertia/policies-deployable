@@ -34,7 +34,7 @@ helpers do
   end
 
   def company_url
-    "http://enertiagroup.com"
+    "enertiagroup.com"
   end
 
   # FILL IN YOUR SECURITY OFFICER INFORMATION HERE
