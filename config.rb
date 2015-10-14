@@ -22,19 +22,19 @@ helpers do
 
   # FILL IN YOUR COMPANY INFORMATION HERE
   def company_name
-    "Acme Inc"
+    "Enertia, LLC"
   end
 
   def company_name_phone
-    "888-888-8888"
+    "856-330-4767"
   end
 
   def company_name_email
-    "contact@company.com"
+    "technology@enertiagroup.com"
   end
 
   def company_url
-    "company.com"
+    "http://enertiagroup.com"
   end
 
   # FILL IN YOUR SECURITY OFFICER INFORMATION HERE
