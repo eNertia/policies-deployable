@@ -28,15 +28,14 @@ Below are mappings of HIPAA Rules to <%= company_name %> controls and a mapping 
 
 ## <%= company_name %> Organizational Concepts
 
-The physical infrastructure environment is hosted at [Rackspace](http://broadcast.rackspace.com/downloads/pdfs/RackspaceSecurityApproach.pdf) and Amazon Web Services (AWS). The network components and supporting network infrastructure is contained within AWS and Rackspace infrastructure and managed by Rackspace and AWS. <%= company_name %> does not have physical access into the network components. The <%= company_name %> environment consists of Cisco firewalls, Apache web servers, Dropwizard Java application servers, Percona and Riak database servers, Logstash logging servers, Linux Ubuntu monitoring servers, Puppet access control server, OSSEC IDS services, Docker containers, Linux CentOS bastion host, and developer tools servers running on Linux Ubuntu.
+The physical infrastructure environment is hosted at Amazon Web Services (AWS). The network components and supporting network infrastructure is contained within AWS infrastructure and managed by AWS. <%= company_name %> does not have physical access into the network components. The <%= company_name %> environment consists of Apache web servers, Linux Ubuntu monitoring servers, and developer tools servers running on Linux and Windows operating systems.
 
-Within the <%= company_name %> Platform, both on Rackspace and AWS, all data transmission is encrypted and all hard drives are encrypted so data at rest is also encrypted; this applies to all servers - those hosting Docker containers, databases, APIs, log servers, etc. <%= company_name %> assumes all data *may* contain ePHI, even though our Risk Assessment does not indicate this is the case, and provides appropriate protections based on that assumption.
+Within the <%= company_name %> Platform, AWS, all data transmission is encrypted and all hard drives are encrypted so data at rest is also encrypted; this applies to all servers - those hosting web applications, databases, APIs, log servers, etc. <%= company_name %> assumes all data *may* contain ePHI, even though our Risk Assessment does not indicate this is the case, and provides appropriate protections based on that assumption.
 
 In the case of PaaS Customers, it is the responsibility of the Customer to restrict, secure, and assure the privacy of all ePHI data at the Application Level, as this is not under the control or purview of <%= company_name %>.
 
-There is data and network segmentation in place but differently implemented on Rackspace and AWS versions of the <%= company_name %> Platform.
+There is data and network segmentation in place on the AWS <%= company_name %> Platform.
 
-* With Rackspace, hosted load balancers segment data and traffic while Cisco firewalls route traffic to private subnets for each PaaS Customer and for Platform Add-ons.
 * With AWS, hosted load balancers segment data across dedicated Virtual Private Clouds for each PaaS Customer and for Platform Add-ons.
 
 The result of segmentation strategies employed by <%= company_name %> effectively create RFC 1918, or dedicated, private segmented and separated networks and IP spaces, for each PaaS Customer and for Platform Add-ons. 
