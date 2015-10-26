@@ -27,7 +27,7 @@ $ rake view_docs
 
 You can now open up [`http://localhost:2113`](http://localhost:2113) to view your docs. They should look like this:
 
-![Doc Image](http://i.imgur.com/Jg2vpK7.png)
+![Doc Image](http://i.imgur.com/PVLFhxP.png)
 
 
 # Customization
