@@ -12,25 +12,19 @@ Below are mappings of HIPAA Rules to <%= company_name %> controls and a mapping 
 
 ## <%= company_name %> Organizational Concepts
 
-The physical infrastructure environment is hosted at Amazon Web Services (AWS). The network components and supporting network infrastructure is contained within AWS infrastructure and managed by AWS. <%= company_name %> does not have physical access into the network components. The <%= company_name %> environment consists of Apache web servers, Linux Ubuntu monitoring servers, and developer tools servers running on Linux and Windows operating systems.
+The physical infrastructure environment is hosted at Amazon Web Services (AWS). The network components and supporting network infrastructure is contained within AWS infrastructure and managed by AWS. <%= company_name %> does not have physical access into the network components. The <%= company_name %> environment consists of Apache web servers, Linux Ubuntu monitoring servers, and development servers running on Linux and Windows operating systems.
 
-Within the <%= company_name %> Platform, AWS, all data transmission is encrypted and all hard drives are encrypted so data at rest is also encrypted; this applies to all servers - those hosting web applications, databases, APIs, log servers, etc. <%= company_name %> assumes all data *may* contain ePHI, even though our Risk Assessment does not indicate this is the case, and provides appropriate protections based on that assumption.
+Within the <%= company_name %> AWS Platform, all data transmission is encrypted and all hard drives are encrypted so data at rest is also encrypted; this applies to all servers - those hosting web applications, databases, APIs, log servers, etc. <%= company_name %> assumes all data *may* contain ePHI, even though our Risk Assessment does not indicate this is the case, and provides appropriate protections based on that assumption.
 
-In the case of PaaS Customers, it is the responsibility of the Customer to restrict, secure, and assure the privacy of all ePHI data at the Application Level, as this is not under the control or purview of <%= company_name %>.
+There is data segmentation in place on the <%= company_name %> AWS Platform.
 
-There is data and network segmentation in place on the AWS <%= company_name %> Platform.
+<%= company_name %> has implemented strict logical access controls so that only authorized personnel are given access to the internal management servers. The environment is configured so that data is transmitted to the application servers over an SSL encrypted session.
 
-* With AWS, hosted load balancers segment data across dedicated Virtual Private Clouds for each PaaS Customer and for Platform Add-ons.
+Once data is received from the application server, a series of Application Programming Interface (API) calls is made to the database servers where the ePHI resides. The ePHI is separated into MySQL databases through programming logic built, so that access to one database server will not present you with the full ePHI spectrum. 
 
-The result of segmentation strategies employed by <%= company_name %> effectively create RFC 1918, or dedicated, private segmented and separated networks and IP spaces, for each PaaS Customer and for Platform Add-ons. 
+The application servers are externally facing and accessible via the Internet. The database servers, where the ePHI resides, are located on the <%= company_name %> AWS Platform and can only be accessed directly over an SSH connection through the bastion host. The access to the internal database is restricted to a limited number of personnel and strictly controlled to only those personnel with a business justified reason. Remote access to the internal servers is not accessible except through the bastion host.
 
-Additionally, IPtables is used on each each server for logical segmentation. The IPtables are configured to restrict access to only justified ports and protocols. <%= company_name %> has implemented strict logical access controls so that only authorized personnel are given access to the internal management servers. The environment is configured so that data is transmitted from the load balancers to the application servers over an SSL encrypted session.
-
-In the case of Platform Add-ons, once the data is received from the application server, a series of Application Programming Interface (API) calls is made to the database servers where the ePHI resides. The ePHI is separated into Riak and Percona databases through programming logic built, so that access to one database server will not present you with the full ePHI spectrum. 
-
-The bastion host, Apache web server, Dropwizard application servers are externally facing and accessible via the Internet. The database servers, where the ePHI resides, are located on the internal <%= company_name %> network and can only be accessed directly over an SSH connection through the bastion host. The access to the internal database is restricted to a limited number of personnel and strictly controlled to only those personnel with a business justified reason. Remote access to the internal servers is not accessible except through the load balancers and bastion host.
-
-All Platform Add-ons and operating systems are tested end-to-endfor usability, security and impact prior to deployment to production.
+All operating systems are tested end-to-end for usability, security and impact prior to deployment to production.
 
 ## Version Control
 
