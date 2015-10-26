@@ -1,6 +1,6 @@
 # Enertia, LLC Policies (Deployable Website)
 
-![Repo Cover](http://i.imgur.com/D8sq8ex.png)
+![Repo Cover](http://i.imgur.com/tItS2Wl.png)
 
 Within the interest of our employees we've decided to host and maintain a deployable version of our compliance policies. This body of work will provide Enertia, LLC with the ability to quickly edit, build, and publish policies.
 
