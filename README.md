@@ -1,16 +1,10 @@
-# Catalyze Policies (Deployable)
+# Enertia, LLC Policies (Deployable Website)
 
-![Repo Cover](http://i.imgur.com/D8sq8ex.png)
+![Repo Cover](http://i.imgur.com/tItS2Wl.png)
 
-**Only interested in the Policy content? You can find the markdown pages located in our [policies](https://github.com/catalyzeio/policies) repo.**
-
-Within the interest of our loyal customers we've decided to build a deployable version of our widely popular open source compliance policies. This body of work will provide you with the ability to quickly edit, build, and publish your very own version of our policies.
-
-We encourage contributions and adaption to this project. For guidelines on how to contribute please see the `CONTRIBUTING.md` file.
+Within the interest of our employees we've decided to host and maintain a deployable version of our compliance policies. This body of work will provide Enertia, LLC with the ability to quickly edit, build, and publish policies.
 
 # Getting Started
-
-[**Check out our in-depth getting started tutorial!**](https://github.com/catalyzeio/policies-deployable/wiki/Getting-Started-Tutorial)
 
 **This section assumes you have a machine running OSX. If you're running windows you can download [RubyInstaller](http://rubyinstaller.org/) to get your local Ruby environment setup.**
 
@@ -110,7 +104,7 @@ To help manage these docs we've provided a simple set of Rake tasks. Currently t
 
 # Deployment
 
-To deploy your docs you'll first need a web server running either apache or nginx. If you plan on hosting your docs as a subdirectory to your main website you most likely already have this setup. If your plan is to host them as a subdirectory (like we do: [policy.catalyze.io](https://policy.catalyze.io)) you can use any number of popular web hosting providers.
+To deploy your docs you'll first need a web server running either apache or nginx. If you plan on hosting your docs as a subdirectory to your main website you most likely already have this setup. You can also use any number of popular web hosting providers.
 
 Once you have all of your customizations made you can run the following rake task to build your static assets:
 
@@ -128,17 +122,3 @@ You can now view your static files locally by visiting [`localhost:8888`](http:/
 The static assets located in the build directory are what you want to host.
 
 **Note: You may want to create a directory on your web server, clone your forked repo, and change the build directory within the config file so that you can manage and deploy changes directly on the server.**
-
-We are also currently evaluating the possibility of managing and hosting policies for our customers. If that interests you please send us an email at [hello@catalyze.io](mailto:hello@catalyze.io) with the subject line "Policy Documentation".
-
-### Policies in the wild
-
-[Read about Eligible's success with Catalyze's open source policies!](https://catalyze.io/announcements/catalyze-releases-open-source-policies-and-procedures-to-hasten-healthcare-it-development)
-
-Some of our favorite forks:
-
-- https://github.com/MolecularMatch/policies
-- https://github.com/FilamentLabs/PolicyExplorer
-- https://github.com/Xodarap/policies
-- https://github.com/doxyme/policies
-- https://github.com/SelfCareCatalysts/policies
