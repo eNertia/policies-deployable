@@ -13,17 +13,6 @@ It is the policy of <%= company_name %> to safeguard the confidentiality, integr
 
 This policy applies to all <%= company_name %> Add-on systems, including BaaS, that store, transmit, or process ePHI. This policy, and associated procedures, do not apply to PaaS Customers that do not choose <%= company_name %> Logging Service. 
 
-## Applicable Standards from the HITRUST Common Security Framework
-
-* 0.a Information Security Management Program
-* 01.a Access Control Policy
-* 01.b User Registration
-* 01.c Privilege Management
-* 09.aa Audit Logging
-* 09.ac Protection of Log Information
-* 09.ab - Monitoring System Use
-* 06.e - Prevention of Misuse of Information
-
 ## Applicable Standards from the HIPAA Security Rule
 
 * 45 CFR ¬ß 164.308(a)(1)(ii)(D) - Information System Activity Review
@@ -33,11 +22,11 @@ This policy applies to all <%= company_name %> Add-on systems, including BaaS, t
 * 45 CFR ¬ß 164.312(c)(2) - Mechanism to Authenticate ePHI
 * 45 CFR ¬ß 164.312(e)(2)(i) - Integrity Controls
 
-# Auditing Policies
+# Auditing Procedures
 
-1. Responsibility for auditing information system access and activity is assigned to <%= company_name %>’s Security Officer. The Security Officer shall:
+1. Responsibility for auditing information system access and activity is assigned to <%= company_name %>’s Compliance Officer. The Compliance Officer shall:
 	* Assign the task of generating reports for audit activities to the workforce member responsible for the application, system, or network;
-	* Assign the task of reviewing the audit reports to the workforce member responsible for the application, system, or network, the Privacy Officer, or any other individual determined to be appropriate for the task;
+	* Assign the task of reviewing the audit reports to the workforce member responsible for the application, system, or network, the Compliance Officer, or any other individual determined to be appropriate for the task;
 	* Organize and provide oversight to a team structure charged with audit compliance activities (e.g., parameters, frequency, sample sizes, report formats, evaluation, follow-up, etc.).
 	* All connections to <%= company_name %> are monitored. Access is limited to certain services, ports, and destinations. Exceptions to these rules, if created, are reviewed on an annual basis. 
 2. <%= company_name %>’s auditing processes shall address access and activity at the following levels listed below. In the case of PaaS Customers, Application and User level auditing is the responsibility of the Customer; <%= company_name %> provides software to aggregate and view User and Application logs, but the log data collected is the responsibility of the PaaS Customer. Auditing processes may address date and time of each log-on attempt, date and time of each log-off attempt, devices used, functions performed, etc.
@@ -52,8 +41,8 @@ This policy applies to all <%= company_name %> Add-on systems, including BaaS, t
 7. <%= company_name %> uses OSSEC to monitor the integrity of log files by utilizing OSSEC System Integrity Checking capabilities.
 8. <%= company_name %> shall identify “trigger events” or criteria that raise awareness of questionable conditions of viewing of confidential information. The “events” may be applied to the entire <%= company_name %> Platform or may be specific to a Customer, partner, business associate, Platform Add-on or application (See Listing of Potential Trigger Events below).
 9. In addition to trigger events, <%= company_name %> utilizes OSSEC log correlation functionality to proactively identify and enable alerts based on log data.
-10. Logs are reviewed weekly by Security Officer. 
-11. <%= company_name %>’s Security Officer and Privacy Officer are authorized to select and use auditing tools that are designed to detect network vulnerabilities and intrusions. Such tools are explicitly prohibited by others, including Customers and Partners, without the explicit authorization of the Security Officer. These tools may include, but are not limited to:
+10. Logs are reviewed weekly by the Compliance Officer. 
+11. <%= company_name %>’s Compliance Officer is authorized to select and use auditing tools that are designed to detect network vulnerabilities and intrusions. Such tools are explicitly prohibited by others, including Customers and Partners, without the explicit authorization of the Compliance Officer. These tools may include, but are not limited to:
 	* Scanning tools and devices;
 	* Password cracking utilities;
 	* Network “sniffers.”
@@ -72,11 +61,11 @@ This policy applies to all <%= company_name %> Add-on systems, including BaaS, t
 
 ## Audit Requests
 
-1. A request may be made for an audit for a specific cause. The request may come from a variety of sources including, but not limited to, Privacy Officer, Security Officer, Customer, Partner, or an Application owner or application user.
-2. A request for an audit for specific cause must include time frame, frequency, and nature of the request. The request must be reviewed and approved by <%= company_name %>’s Privacy or Security Officer.
-3. A request for an audit must be approved by <%= company_name %>’s Privacy Officer and/or Security Officer before proceeding. Under no circumstances shall detailed audit information be shared with parties without proper permissions and access to see such data.
-	* Should the audit disclose that a workforce member has accessed ePHI inappropriately, the minimum necessary/least privileged information shall be shared with <%= company_name %>’s Security Officer to determine appropriate sanction/ corrective disciplinary action.
-	* Only de-identified information shall be shared with Customer or Partner regarding the results of the investigative audit process. This information will be communicated to the appropriate personnel by <%= company_name %>’s Privacy Officer or designee. Prior to communicating with customers and partners regarding an audit, it is recommended that <%= company_name %> consider seeking risk management and/or legal counsel.
+1. A request may be made for an audit for a specific cause. The request may come from a variety of sources including, but not limited to, Compliance Officer, Customer, Partner, or an Application owner or application user.
+2. A request for an audit for specific cause must include time frame, frequency, and nature of the request. The request must be reviewed and approved by <%= company_name %>’s Compliance Officer.
+3. A request for an audit must be approved by <%= company_name %>’s Compliance Officer before proceeding. Under no circumstances shall detailed audit information be shared with parties without proper permissions and access to see such data.
+	* Should the audit disclose that a workforce member has accessed ePHI inappropriately, the minimum necessary/least privileged information shall be shared with <%= company_name %>’s Compliance Officer to determine appropriate sanction/ corrective disciplinary action.
+	* Only de-identified information shall be shared with Customer or Partner regarding the results of the investigative audit process. This information will be communicated to the appropriate personnel by <%= company_name %>’s Compliance Officer or designee. Prior to communicating with customers and partners regarding an audit, it is recommended that <%= company_name %> consider seeking risk management and/or legal counsel.
 
 ## Review and Reporting of Audit Findings
 
